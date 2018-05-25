@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.hp.studyforfun.React">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:elevation="2dp"
+        android:fadingEdge="horizontal"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:onClick="back"
+            android:layout_marginStart="10dp"
+            android:padding="10dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:onClick="back"
+            android:padding="5dp"
+            android:text="Reactions  "
+            android:textColor="#E50048"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+
+        android:background="@color/white"
+
+        android:elevation="1dp"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/reaction"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="60dp"
+            android:layout_marginStart="10dp"
+            android:alpha="0.8"
+            android:background="@drawable/border1"
+            android:focusableInTouchMode="true"
+            android:hint="Type Here....."
+            android:padding="5dp"
+
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <ImageButton
+
+            android:id="@+id/send"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="-50dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/reaction"
+            android:background="@drawable/send"
+            android:onClick="send"
+            android:padding="5dp"
+            android:src="@drawable/send" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/react_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="55dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:divider="@null"
+        app:layout_constraintBottom_toBottomOf="@id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.286" />
+
+
+    <LinearLayout
+        android:id="@+id/wait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+<ProgressBar
+    android:layout_width="40dp"
+    android:layout_height="40dp" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hp.studyforfun">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name=".Myapplication"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ConfirmActivity" />
+
+        <service android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".MessageActivity" />
+        <activity android:name=".chat" />
+        <activity android:name=".Redirect">
+            <intent-filter>
+                <action android:name="Redirect" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Tutorial" />
+        <activity android:name=".QuizActivity" />
+        <activity android:name=".MainTutorial" />
+        <activity android:name=".TutorialUpload" />
+        <activity android:name=".QuizMain" />
+        <activity android:name=".Drive" />
+        <activity android:name=".Panel" />
+        <activity android:name=".Share" />
+        <activity android:name=".Files" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Upload" />
+        <activity android:name=".React" />
+        <activity android:name=".Result" />
+        <activity android:name=".Edit" />
+        <activity android:name=".QuizOption"></activity>
+    </application>
+
+</manifest>

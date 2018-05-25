@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "815508530257",
+    "firebase_url": "https://studyforfun-39965.firebaseio.com",
+    "project_id": "studyforfun-39965",
+    "storage_bucket": "studyforfun-39965.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815508530257:android:6780e70baf33d2d0",
+        "android_client_info": {
+          "package_name": "com.example.hp.studyforfun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815508530257-am4g3npe1ino0hikk8o8i8ofcm6uf6h8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASNRVu1qgXs1qwH_BFJEpp5Ve3GZuQgZs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

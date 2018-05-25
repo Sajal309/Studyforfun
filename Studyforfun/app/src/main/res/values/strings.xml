@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Studyforfun</string>
+    <string name="studyforfun">Studyforfun</string>
+    <string name="email">Email</string>
+    <string name="name">Name</string>
+    <string name="join">Join</string>
+    <string name="backgroundimage">BackgroundImage</string>
+    <string name="confirm">Enter OTP sent to your email</string>
+    <string name="otp">OTP</string>
+    <string name="con">Confirm</string>
+    <string name="title_activity_homepage">Homepage</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="submit">Submit</string>
+</resources>

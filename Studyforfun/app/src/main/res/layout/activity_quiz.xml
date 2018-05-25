@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+       android:id="@+id/uper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:padding="5dp">
+        <LinearLayout
+            android:layout_width="110dp"
+            android:paddingTop="1dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageButton
+                android:id="@+id/discuss1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/discuss"
+                android:background="#ffffff"/>
+            <TextView
+                android:id="@+id/discuss2"
+
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff3e82"
+                android:textStyle="bold"
+                android:text="Discuss" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/line"/>
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageButton
+           android:id="@+id/share1"
+                android:onClick="result"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/result"
+                android:background="@color/white"/>
+            <TextView
+                android:id="@+id/share2"
+                android:onClick="result"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff3e82"
+                android:text="Result"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:background="@drawable/line"/>
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <ImageButton
+                android:id="@+id/quit1"
+                android:onClick="quit"
+                android:layout_width="25dp"
+                android:layout_height="27dp"
+                android:src="@drawable/cancel"
+                android:background="@color/white"/>
+            <TextView
+                android:id="@+id/quit2"
+                android:onClick="quit"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff3e82"
+                android:textStyle="bold"
+                android:text="Quit" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="0.9dp"
+
+        android:layout_marginBottom="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/shadow"
+        android:elevation="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/line">
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/l6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="52dp"
+         />
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="5dp">
+
+
+
+        <TextView
+            android:id="@+id/previous"
+            android:layout_width="130dp"
+            android:layout_height="41dp"
+            android:layout_alignParentStart="true"
+          android:textStyle="bold"
+            android:layout_marginEnd="50dp"
+            android:onClick="previous"
+            android:padding="10dp"
+            android:text="Previous"
+            android:textColor="#ff3e82" />
+
+        <TextView
+            android:id="@+id/next"
+            android:layout_width="130dp"
+            android:layout_height="41dp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:onClick="next"
+            android:gravity="right"
+            android:padding="10dp"
+            android:text="Next"
+            android:textColor="#ff3e82" />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
